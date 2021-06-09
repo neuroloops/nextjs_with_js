@@ -5,7 +5,10 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
       <div className={styles.container}>
-        <main className={styles.main}>{children}</main>
+        <main className={styles.main}>
+          <header />
+          {children}
+        </main>
       </div>
     </>
   )
